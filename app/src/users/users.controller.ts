@@ -2,7 +2,6 @@ import { Body, Controller, Get, OnModuleInit, Post } from '@nestjs/common';
 import { ApiBody } from '@nestjs/swagger';
 import { UserDto } from "./DTO's/user.dto";
 import { UserEntity } from './entities/user';
-import { IUser } from './interfaces/user.interface';
 import { Client, ClientKafka, Transport } from '@nestjs/microservices';
 import { Observable } from 'rxjs';
 
@@ -39,7 +38,7 @@ export class UsersController implements OnModuleInit {
 
   @Post()
   @ApiBody({ type: UserDto })
-  create(@Body() user: IUser): Observable<UserEntity> {
+  create(@Body() user: UserDto): Observable<UserEntity> {
     return this.client.send('create-user', user);
   }
 }
