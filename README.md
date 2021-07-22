@@ -9,7 +9,11 @@ The need to build platform was developed with the aim of connecting civil engine
 ## Tecnologias utilizadas
 
 > Swagger
+> 
 > Node.JS
+> 
 > Kafka
+> 
 > Postgres
+> 
 > MongoDB
