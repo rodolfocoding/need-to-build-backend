@@ -1,4 +1,4 @@
-# Need to build
+# Need to build 👷
 
 ## Porturguês
 A plataforma need to build, foi desenvolvida com o intuíto de conectar engenheiros civis e pessoas leigas, interessadas em construir um determinado projeto em suas propriedades.
